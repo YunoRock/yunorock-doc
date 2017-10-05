@@ -5,6 +5,17 @@
 
 At the moment, this project is still very much a WIP.
 
+TODO:
+
+* talk about PKG++ and how to create recipes
+* talk about how PKG++ will import automatically things from pip, npm, and so on
+* talk about conventions in recipes and good practices
+* talk about tests
+* create two repositories for our packages (stable and testing), then complete the quick start in this handbook
+* provide iso file and rootfs
+* develop a simple continuous integration system, for automatic building and testing environment
+
+
 ---
 
 # Yunorock project
@@ -24,11 +35,6 @@ We provide sane configuration defaults.
 ### Quick start: how to install
 
 ***Come back later!***
-
-TODO:
-
-* create the repository then promote it here
-* provide an image file
 
 You only need to know the services you want and the interaction between them.
 
@@ -53,6 +59,8 @@ These software, including the underlying operating system itself, were chosen ba
 ### Repository
 
 > A new repository for the Alpine Linux distribution is foreseen for this project.
+
+***Come back later!***
 
 ## Yunorock sane design principles
 

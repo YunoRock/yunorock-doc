@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+$for(css)$
+<?xml-stylesheet href="$css$"?>
+$endfor$
+<!DOCTYPE html>
+<html$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$ xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="generator" content="pandoc"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+$for(author-meta)$
+  <meta name="author" content="$author-meta$"/>
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$"/>
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+$if(quotes)$
+  <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+$endif$
+$if(highlighting-css)$
+  <style type="text/css">
+$highlighting-css$
+  </style>
+$endif$
+$if(math)$
+  $math$
+$endif$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+</head>
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+<header class="section hero is-primary">
+	<div class="container">
+		<h1 class="title is-1"><a href="/index.xhtml">YunoRock</a></h1>
+	</div>
+</header>
+<nav class="nav has-shadow">
+	<div class="container">
+		<a class="nav-item" href="index.xhtml">Home</a>
+		<a class="nav-item" href="handbook.xhtml">Handbook</a>
+		<a class="nav-item" href="//github.com/YunoRock">Github</a>
+	</div>
+</nav>
+
+<div id="body">
+$if(title)$
+<h1 class="title">$title$</h1>
+$if(subtitle)$
+<h1 class="subtitle">$subtitle$</h1>
+$endif$
+$for(author)$
+<h2 class="author">$author$</h2>
+$endfor$
+$if(date)$
+<h3 class="date">$date$</h3>
+$endif$
+$endif$
+$if(toc)$
+<nav id="$idprefix$TOC" class="section hero is-dark content">
+	<div id="container" class="container">
+		<h2 class="title is-2">Table of contents</h2>
+		$toc$
+	</div>
+</nav>
+$endif$
+$if(content)$
+<div id="container" class="container">
+	<div class="content">
+$endif$
+		$body$
+$if(content)$
+	</div>
+</div>
+$endif$
+$for(include-after)$
+$include-after$
+$endfor$
+</div>
+<div class="nav has-shadow">
+	<div class="container">
+	</div>
+</div>
+<footer class="section hero is-primary">
+	<div class="container">
+		<div class="level">
+			<div class="level-item">
+				YunoRock is luv
+			</div>
+			<div class="level-item">
+				<a class="button is-outline is-primary" href="legal.xhtml">Legal</a>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
